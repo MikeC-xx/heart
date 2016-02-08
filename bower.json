@@ -1,0 +1,21 @@
+{
+  "name": "heart",
+  "description": "HTML5 Canvas Demo",
+  "main": "index.js",
+  "authors": [
+    "Mikec"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "normalize-css": "~3.0.3"
+  }
+}
