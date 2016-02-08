@@ -4,7 +4,6 @@ module.exports = {
 
   options: {
     sourceMap: true,
-    sourceMapIn: '<%= paths.temp %>/js/main.js.map',
   },
 
   dist: {

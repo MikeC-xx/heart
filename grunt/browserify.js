@@ -15,7 +15,7 @@ module.exports = {
     },
     files: [
       {
-        '<%= paths.src %>/js/main.js': ['<%= paths.src %>/js/main.js'],
+        '<%= paths.temp %>/js/main.js': ['<%= paths.src %>/js/main.js'],
       },
     ],
   },
