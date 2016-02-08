@@ -23,7 +23,6 @@ module.exports = {
 
   'build-js': [
     'browserify',
-    'concat',
     'uglify',
   ],
 
