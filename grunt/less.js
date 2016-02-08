@@ -8,7 +8,7 @@ module.exports = {
       banner: '<%= banner %>',
     },
     files: {
-      '<%= paths.temp %>/main.css': '<%= paths.src %>/less/main.less',
+      '<%= paths.temp %>/css/main.css': '<%= paths.src %>/less/main.less',
     },
   },
 

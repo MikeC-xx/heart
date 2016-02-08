@@ -21,7 +21,7 @@ module.exports = {
     ],
   },
   dist: {
-    src: '<%= paths.temp %>/main.css',
+    src: '<%= paths.temp %>/css/main.css',
     dest: '<%= paths.dist %>/css/main.min.css',
   },
 

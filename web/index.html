@@ -10,7 +10,24 @@
 </head>
 <body>
 
-    <h1>Draw yourself a heart full of love</h1>
+    <div class="text--center">
+        <h1>Draw yourself a heart full of love</h1>
+        <h2>Options:</h2>
+        <form id="controls">
+            <label for="should-draw-heart">
+                <input id="should-draw-heart" type="checkbox" checked /> Draw heart
+            </label>
+            <label for="should-draw-points">
+                <input id="should-draw-points" type="checkbox" /> Draw cubic points
+            </label>
+            <label for="beat">
+                <input id="beat" type="checkbox" /> Beat animation
+            </label>
+            <label for="scale">Scale <input id="scale" type="range" min="0" max="100" value="100" /></label>
+            <label for="rotate">Rotate <input id="rotate" type="range" min="0" max="360" value="0" /></label>
+        </form>
+        <canvas id="canvas" class="canvas"></canvas>
+    </div>
 
     <script src="js/main.min.js?v=1" async defer></script>
 
