@@ -13,7 +13,6 @@
   "esnext": true,
 
   "globals": {
-    "require": false,
-    "module": false
+    "alert": false
   }
 }

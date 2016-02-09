@@ -11,25 +11,35 @@
 <body>
 
     <div class="text--center">
-        <h1>Draw yourself a heart full of love</h1>
-        <h2>Options:</h2>
-        <form id="controls">
+        <h1 id="title">Send a heart full of love</h1>
+        <form id="controls" onsubmit="return false;">
+            <h2>Options:</h2>
             <label for="should-draw-heart">
                 <input id="should-draw-heart" type="checkbox" checked /> Draw heart
             </label>
-            <label for="should-draw-points">
-                <input id="should-draw-points" type="checkbox" /> Draw cubic points
+            <label for="should-draw-cubic-points">
+                <input id="should-draw-cubic-points" type="checkbox" /> Draw cubic points
             </label>
-            <label for="beat">
-                <input id="beat" type="checkbox" /> Beat animation
+            <label for="should-heart-beat">
+                <input id="should-heart-beat" type="checkbox" checked /> Beat animation
             </label>
+            <br />
+            <label for="title-text">
+                Title: <input id="title-text" type="text" value="Send a heart full of love" />
+            </label>
+            <label for="text">
+                Text: <input id="text" type="text" value="Your Name" />
+            </label>
+            <br />
             <label for="scale">Scale <input id="scale" type="range" min="0" max="100" value="100" /></label>
             <label for="rotate">Rotate <input id="rotate" type="range" min="0" max="360" value="0" /></label>
+            <br />
+            <button id="send">Send to a friend</button>
         </form>
-        <canvas id="canvas" class="canvas"></canvas>
+        <canvas id="canvas"></canvas>
     </div>
 
-    <script src="js/main.min.js?v=1" async defer></script>
+    <script src="js/main.min.js?v=1"></script>
 
 </body>
 </html>
