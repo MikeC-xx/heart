@@ -130,7 +130,7 @@ export default class {
     this.sendButton.addEventListener('click', () => {
       let url = `${this.windowElement.location.protocol}//${this.windowElement.location.host}${this.windowElement.location.pathname}`;
       url += `#title=${this.titleInputElement.value}&text=${this.textElement.value}&heart=${this.shouldDrawHeart.checked ? '1' : '0'}`;
-      url += `&points=${this.shouldHeartBeat.checked ? '1' : '0'}&points=${this.shouldDrawCubicPoints.checked ? '1' : '0'}`;
+      url += `&beat=${this.shouldHeartBeat.checked ? '1' : '0'}&points=${this.shouldDrawCubicPoints.checked ? '1' : '0'}`;
       url += `&scale=${this.scaleElement.value}&rotate=${this.rotateElement.value}&controls=0`;
       alert(`Copy and send this address:\n${encodeURI(url)}`);
     });
