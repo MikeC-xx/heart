@@ -132,7 +132,7 @@ export default class {
       url += `#title=${this.titleInputElement.value}&text=${this.textElement.value}&heart=${this.shouldDrawHeart.checked ? '1' : '0'}`;
       url += `&points=${this.shouldHeartBeat.checked ? '1' : '0'}&points=${this.shouldDrawCubicPoints.checked ? '1' : '0'}`;
       url += `&scale=${this.scaleElement.value}&rotate=${this.rotateElement.value}&controls=0`;
-      alert(`Copy and send this address:\n${url}`);
+      alert(`Copy and send this address:\n${encodeURI(url)}`);
     });
 
     this.draw();
